@@ -21,5 +21,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/download-pdf', 'App\Http\Controllers\HomeController@generar_pdf,')->name('descargar-pdf');
 
 

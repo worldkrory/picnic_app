@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 25, 2022 at 12:19 AM
+-- Generation Time: Jun 28, 2022 at 08:38 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -94,7 +94,8 @@ CREATE TABLE `pedidos` (
 --
 
 INSERT INTO `pedidos` (`id`, `mesa`, `precio`, `productos`, `estado`, `created_at`, `updated_at`) VALUES
-(1, 'TERRAZA', 0, 'none', 'FINALIZADO', NULL, NULL);
+(2, 'SALON1', 0, 'papas1', 'confirmado', '2022-06-27 20:52:01', '2022-06-27 22:32:23'),
+(3, 'SALON2', 500, 'qwqwgqwg123123123', 'confirmado', '2022-06-27 21:37:13', '2022-06-27 22:32:30');
 
 -- --------------------------------------------------------
 
@@ -243,7 +244,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
